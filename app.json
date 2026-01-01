@@ -1,0 +1,42 @@
+{
+  "name": "Love You",
+  "description": "Telegram's bilek migic.",
+  "keywords": ["python", "telegram"],
+  "logo": "https://i.imghippo.com/files/BTfl3729wI.png",
+  "repository": "https://t.me/+IY6LojvxYPk3YWI1",
+  "stack": "container",
+  "addons": [
+      {
+         "options": {
+            "version": "15"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "env": {
+        "BOT_TOKEN": {
+            "description": "7966508263:AAFO-Qgtw-SV9WyMSfhX4jVSeoYNKGBUY6k",
+            "required": true
+        },
+        "API_ID": {
+            "description": "29270571",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "2c1a871d10c5a6a48793136a719ea85c",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "7094852055",
+            "required": true
+        }
+    }
+}
